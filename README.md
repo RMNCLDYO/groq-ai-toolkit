@@ -9,16 +9,6 @@
     <a href=".github/CONTRIBUTING.md" title="Go to contributions doc" target="_blank"><img src="https://img.shields.io/badge/contributions-welcome-2ea44f?style=for-the-badge" alt="contributions - welcome"></a>
 </p>
 
-<p align="center">
-    <a href="/">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RMNCLDYO/groq-ai-toolkit/main/.github/anthropic-logo-dark.png">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RMNCLDYO/groq-ai-toolkit/main/.github/anthropic-logo-light.png">
-          <img alt="Groq AI" width="500" src="https://raw.githubusercontent.com/RMNCLDYO/groq-ai-toolkit/main/.github/groq-logo-light.png">
-        </picture>
-    </a>
-</p>
-
 ## Overview
 
 The Groq AI Toolkit is a comprehensive API wrapper and command-line interface designed for Groq's breakthrough Language Processing Unit (LPU) Inference Engine. This toolkit facilitates near-real-time responses (300 tokens/sec), leveraging the power of GroqCloud's advanced offering of open-source AI models.
