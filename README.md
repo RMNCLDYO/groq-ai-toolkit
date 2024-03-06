@@ -74,7 +74,7 @@ python cli.py --chat
 
 *Ask a question*:
 ```shell
-python cli.py --text --prompt "What is the meaning of life?"
+python cli.py --text --prompt "Explain the importance of low latency LLMs."
 ```
 
 *Get usage details and options*:
@@ -97,7 +97,7 @@ Chat().run()
 ```python
 from groq import Text
 
-Text().run(prompt="What is the meaning of life?")
+Text().run(prompt="Explain the importance of low latency LLMs.")
 ```
 
 > An executable version of this example can be found [here](./examples/example_text.py). (*You must move this file to the root folder before running the program.*)
@@ -105,33 +105,33 @@ Text().run(prompt="What is the meaning of life?")
 ## Advanced Configuration
 
 ### Wrapper Options
-| Option(s)        | Description                          | Example Usage                                    |
-|------------------|--------------------------------------|--------------------------------------------------|
-| `prompt`         | User prompt                          | prompt="Hello, how can I assist you today?"      |
-| `image`          | Image file path or url               | image="path_or_url_goes_here"                    |
-| `api_key`        | Groq API key for authentication      | api_key="api_key_goes_here"                      |
-| `model`          | The model you would like to use      | model="model_name_goes_here"                     |
-| `system_prompt`  | System prompt (instructions)         | system_prompt="You are an advanced AI assistant" |
-| `temperature`    | Sampling temperature                 | temperature=0.7                                  |
-| `max_tokens`     | Maximum number of tokens to generate | max_tokens=1024                                  |
-| `-top_p`         | Nucleus sampling threshold           | top_p=0.9                                        |
-| `stream`         | Enable streaming mode for responses  | stream=True                                      |
-| `stop`           | Stop sequences for completion        | stop=", 6"                                       |
+| Option(s)        | Description                          | Example Usage                                        |
+|------------------|--------------------------------------|------------------------------------------------------|
+| `prompt`         | User prompt                          | prompt="Explain the importance of low latency LLMs." |
+| `image`          | Image file path or url               | image="path_or_url_goes_here"                        |
+| `api_key`        | Groq API key for authentication      | api_key="api_key_goes_here"                          |
+| `model`          | The model you would like to use      | model="model_name_goes_here"                         |
+| `system_prompt`  | System prompt (instructions)         | system_prompt="You are an advanced AI assistant"     |
+| `temperature`    | Sampling temperature                 | temperature=0.7                                      |
+| `max_tokens`     | Maximum number of tokens to generate | max_tokens=1024                                      |
+| `-top_p`         | Nucleus sampling threshold           | top_p=0.9                                            |
+| `stream`         | Enable streaming mode for responses  | stream=True                                          |
+| `stop`           | Stop sequences for completion        | stop=", 6"                                           |
 
 ### CLI Options
-| Option(s)                  | Description                          | Example Usage                                      |
-|----------------------------|--------------------------------------|----------------------------------------------------|
-| `-c`,  `--chat`            | Enable chat mode                     | --chat                                             |
-| `-t`,  `--text`            | Enable text mode                     | --text                                             |
-| `-p`,  `--prompt`          | User prompt                          | --prompt "Hello, how can I assist you today?"      |
-| `-a`,  `--api_key`         | Groq API key for authentication      | --api_key "api_key_goes_here"                      |
-| `-m`,  `--model`           | The model you would like to use      | --model "model_name_goes_here"                     |
-| `-sp`, `--system_prompt`   | System prompt (instructions)         | --system_prompt "You are an advanced AI assistant" |
-| `-tm`, `--temperature`     | Sampling temperature                 | --temperature 0.7                                  |
-| `-mt`, `--max_tokens`      | Maximum number of tokens to generate | --max_tokens 1024                                  |
-| `-tp`, `--top_p`           | Nucleus sampling threshold           | --top_p 0.9                                        |
-| `-st`, `--stream`          | Enable streaming mode for responses  | --stream                                           |
-| `-ss`, `--stop`            | Stop sequences for completion        | --stop ", 6"                                       |
+| Option(s)                  | Description                          | Example Usage                                          |
+|----------------------------|--------------------------------------|--------------------------------------------------------|
+| `-c`,  `--chat`            | Enable chat mode                     | --chat                                                 |
+| `-t`,  `--text`            | Enable text mode                     | --text                                                 |
+| `-p`,  `--prompt`          | User prompt                          | --prompt "Explain the importance of low latency LLMs." |
+| `-a`,  `--api_key`         | Groq API key for authentication      | --api_key "api_key_goes_here"                          |
+| `-m`,  `--model`           | The model you would like to use      | --model "model_name_goes_here"                         |
+| `-sp`, `--system_prompt`   | System prompt (instructions)         | --system_prompt "You are an advanced AI assistant"     |
+| `-tm`, `--temperature`     | Sampling temperature                 | --temperature 0.7                                      |
+| `-mt`, `--max_tokens`      | Maximum number of tokens to generate | --max_tokens 1024                                      |
+| `-tp`, `--top_p`           | Nucleus sampling threshold           | --top_p 0.9                                            |
+| `-st`, `--stream`          | Enable streaming mode for responses  | --stream                                               |
+| `-ss`, `--stop`            | Stop sequences for completion        | --stop ", 6"                                           |
 
 ## Advanced Usage
 
@@ -153,10 +153,10 @@ Chat().run(model="mixtral-8x7b-32768", max_tokens=100, top_p=0.9)
 
 ## Available Models
 
-| **Model**       	          | **Latest API model name**  	| **Max Tokens** 	|
-|----------------------------	|----------------------------	|----------------	|
-| LLaMA2-70b-chat             | `llama2-70b-4096`   	      | 4096 tokens    	|
-| Mixtral-8x7b-Instruct-v0.1 	| `mixtral-8x7b-32768` 	      | 32768 tokens    |
+| **Model**       	           | **Latest API model name**    | **Max Tokens** 	|
+|------------------------------|------------------------------|----------------	|
+| LLaMA2-70b-chat              | `llama2-70b-4096`   	      | 4096 tokens    	|
+| Mixtral-8x7b-Instruct-v0.1   | `mixtral-8x7b-32768` 	      | 32768 tokens    |
 
 ## Contributing
 Contributions are welcome!
