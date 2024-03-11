@@ -132,7 +132,7 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 | `max_tokens`     | Maximum number of tokens to generate | max_tokens=1024                                      |
 | `-top_p`         | Nucleus sampling threshold           | top_p=0.9                                            |
 | `stream`         | Enable streaming mode for responses  | stream=True                                          |
-| `stop`           | Stop sequences for completion        | stop=", 6"                                           |
+| `stop`           | Stop sequence for completion         | stop="\n"                                           |
 
 ### CLI Options
 | Option(s)                  | Description                          | Example Usage                                          |
@@ -147,7 +147,7 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 | `-mt`, `--max_tokens`      | Maximum number of tokens to generate | --max_tokens 1024                                      |
 | `-tp`, `--top_p`           | Nucleus sampling threshold           | --top_p 0.9                                            |
 | `-st`, `--stream`          | Enable streaming mode for responses  | --stream                                               |
-| `-ss`, `--stop`            | Stop sequences for completion        | --stop ", 6"                                           |
+| `-ss`, `--stop`            | Stop sequence for completion         | --stop "\n"                                           |
 
 ## Advanced Usage
 
