@@ -144,6 +144,8 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 
 > An executable version of this example can be found [here](./examples/example_text.py). (*You must move this file to the root folder before running the program.*)
 
+## Advanced Configuration
+
 ### CLI and Wrapper Options
 | **Description**                      | **CLI Flags**            | **CLI Usage**                                          | **Wrapper Usage**                                    |
 |--------------------------------------|--------------------------|--------------------------------------------------------|------------------------------------------------------|
