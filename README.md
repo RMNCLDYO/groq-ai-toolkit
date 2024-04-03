@@ -147,27 +147,27 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 ## Advanced Configuration
 
 ### CLI and Wrapper Options
-| **Description**                      | **CLI Flags**            | **CLI Usage**                                          | **Wrapper Usage**                                    |
-|--------------------------------------|--------------------------|--------------------------------------------------------|------------------------------------------------------|
-| Enable chat mode                     | `-c`,  `--chat`          | --chat                                                 | *See mode usage above.*                              |
-| Enable text mode                     | `-t`,  `--text`          | --text                                                 | *See mode usage above.*                              |
-| User prompt                          | `-p`,  `--prompt`        | --prompt "Explain the importance of low latency LLMs." | prompt="Explain the importance of low latency LLMs." |
-| API key for authentication           | `-a`,  `--api_key`       | --api_key "api_key_goes_here"                          | api_key="api_key_goes_here"                          |
-| Model to use                         | `-m`,  `--model`         | --model "model_name_goes_here"                         | model="model_name_goes_here"                         |
-| System prompt (instructions)         | `-sp`, `--system_prompt` | --system_prompt "You are an advanced AI assistant"     | system_prompt="You are an advanced AI assistant"     |
-| Enable streaming mode                | `-st`, `--stream`        | --stream                                               | stream=True                                          |
-| Sampling temperature                 | `-tm`, `--temperature`   | --temperature 0.7                                      | temperature=0.7                                      |
-| Maximum number of tokens to generate | `-mt`, `--max_tokens`    | --max_tokens 1024                                      | max_tokens=1024                                      |
-| Nucleus sampling threshold           | `-tp`, `--top_p`         | --top_p 0.9                                            | top_p=0.9                                            |
-| Stop sequence for completion         | `-ss`, `--stop`          | --stop "\n"                                            | stop="\n"                                            |
+| **Description**                      | **CLI Flags**            | **CLI Usage**                                         | **Wrapper Usage**                                   |
+|--------------------------------------|--------------------------|-------------------------------------------------------|-----------------------------------------------------|
+| Enable chat mode                     | `-c`,  `--chat`          | --chat                                                | *See mode usage above.*                             |
+| Enable text mode                     | `-t`,  `--text`          | --text                                                | *See mode usage above.*                             |
+| User prompt                          | `-p`,  `--prompt`        | --prompt "Explain the importance of low latency LLMs" | prompt="Explain the importance of low latency LLMs" |
+| API key for authentication           | `-a`,  `--api_key`       | --api_key "api_key_goes_here"                         | api_key="api_key_goes_here"                         |
+| Model name                           | `-m`,  `--model`         | --model "mixtral-8x7b-32768"                          | model="mixtral-8x7b-32768"                          |
+| System prompt (instructions)         | `-sp`, `--system_prompt` | --system_prompt "You are an advanced AI assistant"    | system_prompt="You are an advanced AI assistant"    |
+| Enable streaming mode                | `-st`, `--stream`        | --stream                                              | stream=True                                         |
+| Sampling temperature                 | `-tm`, `--temperature`   | --temperature 0.7                                     | temperature=0.7                                     |
+| Maximum number of tokens to generate | `-mt`, `--max_tokens`    | --max_tokens 1024                                     | max_tokens=1024                                     |
+| Nucleus sampling threshold           | `-tp`, `--top_p`         | --top_p 0.9                                           | top_p=0.9                                           |
+| Stop sequence for completion         | `-ss`, `--stop`          | --stop "\n"                                           | stop="\n"                                           |
 
 ## Available Models
 
-| **Model**       	           | **Model Name**               | **Max Tokens** 	|
-|------------------------------|------------------------------|----------------	|
-| LLaMA2-70b-chat              | `llama2-70b-4096`   	      | 4,096 tokens    |
-| Mixtral-8x7b-Instruct-v0.1   | `mixtral-8x7b-32768` 	      | 32,768 tokens   |
-| Gemma-7b-it                  | `Gemma-7b-it` 	              | 8,192 tokens    |
+| **Model**            | **Max Tokens** |
+|----------------------|----------------|
+| `llama2-70b-4096`    | 4096 tokens    |
+| `mixtral-8x7b-32768` | 32768 tokens   |
+| `Gemma-7b-it`        | 8192 tokens    |
 
 ## Contributing
 Contributions are welcome!
