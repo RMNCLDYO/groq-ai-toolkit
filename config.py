@@ -24,7 +24,7 @@ def load_config(api_key=None):
     
     return {
         'api_key': api_key,
-        'model': os.getenv('GROQ_MODEL', 'mixtral-8x7b-32768'),
+        'model': os.getenv('GROQ_MODEL', 'llama3-8b-8192'),
         'base_url': os.getenv('GROQ_BASE_URL', 'https://api.groq.com'),
         'completions_endpoint': os.getenv('GROQ_COMPLETIONS_ENDPOINT', 'chat/completions'),
         'timeout': int(os.getenv('GROQ_TIMEOUT', 20)),
