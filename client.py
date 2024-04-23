@@ -6,7 +6,7 @@ from loading import Loading
 print("------------------------------------------------------------------\n")
 print("                          Groq AI Toolkit                         \n")     
 print("               API Wrapper & Command-line Interface               \n")   
-print("                       [v1.0.0] by @rmncldyo                      \n")  
+print("                       [v1.0.1] by @rmncldyo                      \n")  
 print("------------------------------------------------------------------\n")
 
 class Client:
@@ -15,7 +15,6 @@ class Client:
         self.api_key = api_key if api_key else self.config.get('api_key')
         self.base_url = self.config.get('base_url')
         self.version = self.config.get('version')
-        self.timeout = self.config.get('timeout')
         self.headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json"
@@ -28,6 +27,16 @@ class Client:
             loading.start()
             response = requests.post(url, headers=self.headers, json=data)
             response = response.json()
+            try:
+                response["error"]["message"]
+                if "Failed to generate JSON" in response["error"]["message"]:
+                    response = "Failed to generate JSON"
+                    return response
+                else:
+                    response = response["error"]["message"]
+                    return response
+            except:
+                pass
             try:
                 response = response["choices"][0]["message"]["content"]
                 return response
