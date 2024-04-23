@@ -26,7 +26,7 @@
 </p>
 
 ## Overview
-The Groq AI Toolkit makes it easy to use Groq's breakthrough LPU Inference Engine for creating chatbots and generating text with near-real-time responses (300 tokens/sec). It's designed for everyone, from beginners to experienced developers, allowing quick addition of AI features to projects with simple commands. While it offers simplicity and lightweight integration, it doesn't compromise on power; experienced developers can access the full suite of advanced options available via the API, ensuring robust customization and control. This toolkit is perfect for those looking to efficiently tap into advanced AI without getting bogged down in technical details, yet it still provides the depth needed for complex project requirements.
+The Groq AI Toolkit makes it easy to use Groq's breakthrough LPU Inference Engine for creating chatbots and generating text with near-real-time responses (800 tokens/sec). It's designed for everyone, from beginners to experienced developers, allowing quick addition of AI features to projects with simple commands. While it offers simplicity and lightweight integration, it doesn't compromise on power; experienced developers can access the full suite of advanced options available via the API, ensuring robust customization and control. This toolkit is perfect for those looking to efficiently tap into advanced AI without getting bogged down in technical details, yet it still provides the depth needed for complex project requirements.
 
 ## Key Features
 - **Chat Functionality**: Engage in interactive conversations with Groq's suite of open and advanced conversational models.
@@ -34,6 +34,7 @@ The Groq AI Toolkit makes it easy to use Groq's breakthrough LPU Inference Engin
 - **Command-Line Interface (CLI)**: Access the full suite of functionalities directly from the command line.
 - **Python Wrapper**: Simplify interaction with Groq's LPU inference models in only 2 lines of code.
 - **Streamed Responses**: Receive responses as they are generated for real-time interaction.
+- **JSON Mode**: Enable JSON-formatted responses for easier parsing and integration into applications.
 - **Flexible Configuration**: Customize the token limits, system prompts, stop sequences, temperature and more.
 - **Minimal Dependencies**: Built to be efficient and lightweight, requiring only the `requests` package for operation.
 
@@ -156,9 +157,11 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 | Model name                           | `-m`,  `--model`         | --model "mixtral-8x7b-32768"                          | model="mixtral-8x7b-32768"                          |
 | System prompt (instructions)         | `-sp`, `--system_prompt` | --system_prompt "You are an advanced AI assistant"    | system_prompt="You are an advanced AI assistant"    |
 | Enable streaming mode                | `-st`, `--stream`        | --stream                                              | stream=True                                         |
+| Enable json mode                     | `-js`, `--json`          | --json                                                | json=True                                           |
 | Sampling temperature                 | `-tm`, `--temperature`   | --temperature 0.7                                     | temperature=0.7                                     |
 | Maximum number of tokens to generate | `-mt`, `--max_tokens`    | --max_tokens 1024                                     | max_tokens=1024                                     |
 | Nucleus sampling threshold           | `-tp`, `--top_p`         | --top_p 0.9                                           | top_p=0.9                                           |
+| Seed used for sampling               | `-sd`, `-seed`           | --seed 123456789                                      | seed=123456789                                      |
 | Stop sequence for completion         | `-ss`, `--stop`          | --stop "\n"                                           | stop="\n"                                           |
 
 > *To exit the program at any time, you can type **`exit`** or **`quit`**. This command works similarly whether you're interacting with the program via the CLI or through the Python wrapper ensuring that you can easily and safely conclude your work with the Groq AI Toolkit without having to resort to interrupt signals or forcibly closing the terminal or command prompt.*
@@ -167,9 +170,11 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 
 | **Model**            | **Max Tokens** |
 |----------------------|----------------|
+| `llama3-70b-8192`    | 8192 tokens    |
+| `llama3-8b-8192`     | 8192 tokens    |
 | `llama2-70b-4096`    | 4096 tokens    |
 | `mixtral-8x7b-32768` | 32768 tokens   |
-| `Gemma-7b-it`        | 8192 tokens    |
+| `gemma-7b-it`        | 8192 tokens    |
 
 ## Contributing
 Contributions are welcome!
