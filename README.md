@@ -108,7 +108,7 @@ pip install -r requirements.txt
 The Groq AI Toolkit can be used in two different modes: `Chat` and `Text`. Each mode is designed for specific types of interactions with Groq's open models.
 
 ## Chat Mode
-Chat mode is intended for chatting with an AI model (similar to a chatbot) or building conversational applications. It supports multi-turn dialogues with the model.
+Chat mode is intended for chatting with an AI model (similar to a chatbot) or building conversational applications.
 
 #### Example Usage
 
@@ -148,21 +148,21 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 ## Advanced Configuration
 
 ### CLI and Wrapper Options
-| **Description**                      | **CLI Flags**            | **CLI Usage**                                         | **Wrapper Usage**                                   |
-|--------------------------------------|--------------------------|-------------------------------------------------------|-----------------------------------------------------|
-| Enable chat mode                     | `-c`,  `--chat`          | --chat                                                | *See mode usage above.*                             |
-| Enable text mode                     | `-t`,  `--text`          | --text                                                | *See mode usage above.*                             |
-| User prompt                          | `-p`,  `--prompt`        | --prompt "Explain the importance of low latency LLMs" | prompt="Explain the importance of low latency LLMs" |
-| API key for authentication           | `-a`,  `--api_key`       | --api_key "api_key_goes_here"                         | api_key="api_key_goes_here"                         |
-| Model name                           | `-m`,  `--model`         | --model "mixtral-8x7b-32768"                          | model="mixtral-8x7b-32768"                          |
-| System prompt (instructions)         | `-sp`, `--system_prompt` | --system_prompt "You are an advanced AI assistant"    | system_prompt="You are an advanced AI assistant"    |
-| Enable streaming mode                | `-st`, `--stream`        | --stream                                              | stream=True                                         |
-| Enable json mode                     | `-js`, `--json`          | --json                                                | json=True                                           |
-| Sampling temperature                 | `-tm`, `--temperature`   | --temperature 0.7                                     | temperature=0.7                                     |
-| Maximum number of tokens to generate | `-mt`, `--max_tokens`    | --max_tokens 1024                                     | max_tokens=1024                                     |
-| Nucleus sampling threshold           | `-tp`, `--top_p`         | --top_p 0.9                                           | top_p=0.9                                           |
-| Seed used for sampling               | `-sd`, `-seed`           | --seed 123456789                                      | seed=123456789                                      |
-| Stop sequence for completion         | `-ss`, `--stop`          | --stop "\n"                                           | stop="\n"                                           |
+| **Description**                      | **CLI Flags**            | **CLI Usage**                                          | **Wrapper Usage**                                    |
+|--------------------------------------|--------------------------|--------------------------------------------------------|------------------------------------------------------|
+| Enable chat mode                     | `-c`,  `--chat`          | --chat                                                 | *See mode usage above.*                              |
+| Enable text mode                     | `-t`,  `--text`          | --text                                                 | *See mode usage above.*                              |
+| User prompt                          | `-p`,  `--prompt`        | --prompt "Explain the importance of low latency LLMs." | prompt="Explain the importance of low latency LLMs." |
+| API key for authentication           | `-a`,  `--api_key`       | --api_key "api_key_goes_here"                          | api_key="api_key_goes_here"                          |
+| Model name                           | `-m`,  `--model`         | --model "llama3-8b-8192"                               | model="llama3-8b-8192"                               |
+| System prompt (instructions)         | `-sp`, `--system_prompt` | --system_prompt "You are a helpful assistant."         | system_prompt="You are a helpful assistant."         |
+| Enable streaming mode                | `-st`, `--stream`        | --stream                                               | stream=True                                          |
+| Enable json mode                     | `-js`, `--json`          | --json                                                 | json=True                                            |
+| Sampling temperature                 | `-tm`, `--temperature`   | --temperature 0.7                                      | temperature=0.7                                      |
+| Maximum number of tokens to generate | `-mt`, `--max_tokens`    | --max_tokens 1024                                      | max_tokens=1024                                      |
+| Nucleus sampling threshold           | `-tp`, `--top_p`         | --top_p 0.9                                            | top_p=0.9                                            |
+| Seed used for sampling               | `-sd`, `-seed`           | --seed 123456789                                       | seed=123456789                                       |
+| Stop sequence for completion         | `-ss`, `--stop`          | --stop "\n"                                            | stop="\n"                                            |
 
 > *To exit the program at any time, you can type **`exit`** or **`quit`**. This command works similarly whether you're interacting with the program via the CLI or through the Python wrapper ensuring that you can easily and safely conclude your work with the Groq AI Toolkit without having to resort to interrupt signals or forcibly closing the terminal or command prompt.*
 
