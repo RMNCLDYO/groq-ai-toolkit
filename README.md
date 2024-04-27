@@ -170,11 +170,11 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 
 | **Model**            | **Max Tokens** |
 |----------------------|----------------|
-| `llama3-70b-8192`    | 8192 tokens    |
-| `llama3-8b-8192`     | 8192 tokens    |
-| `llama2-70b-4096`    | 4096 tokens    |
-| `mixtral-8x7b-32768` | 32768 tokens   |
-| `gemma-7b-it`        | 8192 tokens    |
+| `llama3-70b-8192`    | 8192           |
+| `llama3-8b-8192`     | 8192           |
+| `llama2-70b-4096`    | 4096           |
+| `mixtral-8x7b-32768` | 32768          |
+| `gemma-7b-it`        | 8192           |
 
 ## Contributing
 Contributions are welcome!
