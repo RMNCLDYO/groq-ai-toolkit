@@ -153,7 +153,7 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 | Enable chat mode                     | `-c`,  `--chat`          | --chat                                                 | *See mode usage above.*                              |
 | Enable text mode                     | `-t`,  `--text`          | --text                                                 | *See mode usage above.*                              |
 | User prompt                          | `-p`,  `--prompt`        | --prompt "Explain the importance of low latency LLMs." | prompt="Explain the importance of low latency LLMs." |
-| API key for authentication           | `-a`,  `--api_key`       | --api_key "api_key_goes_here"                          | api_key="api_key_goes_here"                          |
+| API key for authentication           | `-a`,  `--api_key`       | --api_key "your_api_key"                               | api_key="your_api_key"                               |
 | Model name                           | `-m`,  `--model`         | --model "llama3-8b-8192"                               | model="llama3-8b-8192"                               |
 | System prompt (instructions)         | `-sp`, `--system_prompt` | --system_prompt "You are a helpful assistant."         | system_prompt="You are a helpful assistant."         |
 | Enable streaming mode                | `-st`, `--stream`        | --stream                                               | stream=True                                          |
