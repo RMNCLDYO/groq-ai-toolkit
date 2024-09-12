@@ -151,7 +151,7 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 | Enable text mode                     | `-t`,  `--text`          | --text                                                 | *See mode usage above.*                              |
 | User prompt                          | `-p`,  `--prompt`        | --prompt "Explain the importance of low latency LLMs." | prompt="Explain the importance of low latency LLMs." |
 | API key for authentication           | `-a`,  `--api_key`       | --api_key "your_api_key"                               | api_key="your_api_key"                               |
-| Model name                           | `-m`,  `--model`         | --model "llama3-8b-8192"                               | model="llama3-8b-8192"                               |
+| Model name                           | `-m`,  `--model`         | --model "llama-3.1-8b-instant"                         | model="llama-3.1-8b-instant"                         |
 | System prompt (instructions)         | `-sp`, `--system_prompt` | --system_prompt "You are a helpful assistant."         | system_prompt="You are a helpful assistant."         |
 | Enable streaming mode                | `-st`, `--stream`        | --stream                                               | stream=True                                          |
 | Enable json mode                     | `-js`, `--json`          | --json                                                 | json=True                                            |
@@ -165,13 +165,21 @@ Text().run(prompt="Explain the importance of low latency LLMs.")
 
 ## Available Models
 
-| **Model**            | **Max Tokens** |
-|----------------------|----------------|
-| `llama3-70b-8192`    | 8192           |
-| `llama3-8b-8192`     | 8192           |
-| `llama2-70b-4096`    | 4096           |
-| `mixtral-8x7b-32768` | 32768          |
-| `gemma-7b-it`        | 8192           |
+| **Model**                           | **Max Tokens** |
+|-------------------------------------|----------------|
+| `llama-3.1-70b-versatile` (Preview) | 131072         |
+| `llama-3.1-8b-instant` (Preview)    | 131072         |
+| `llava-v1.5-7b-4096-preview`        | 4096           |
+| `llama-guard-3-8b`                  | 8192           |
+| `llama3-70b-8192`                   | 8192           |
+| `llama3-8b-8192`                    | 8192           |
+| `llama2-70b-4096`                   | 4096           |
+| `mixtral-8x7b-32768`                | 32768          |
+| `gemma-7b-it`                       | 8192           |
+| `gemma2-9b-it`                      | 8192           |
+
+> [!NOTE]
+> *While in Preview, Groq is limiting 3.1 models to max tokens of 8k.*
 
 ## Contributing
 Contributions are welcome!
